@@ -4,7 +4,7 @@ config = json.load(open("config.json"))
 from discord import Game as DiscordGame
 from discord.ext import commands
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 AUTHOR = "lordierclaw#4274"
 
 class Helper(commands.Cog):
