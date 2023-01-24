@@ -24,8 +24,7 @@ class ContestManager():
     def filter():
         if (ContestManager.__isContestsUpdated == 0): return
         for i in range(len(ContestManager.__contests["result"])-1, -1, -1):
-            if (ContestManager.__contests["result"][i]["phase"] != "BEFORE" or
-                ContestManager.__contests["result"][i]["type"] != "CF"):
+            if (ContestManager.__contests["result"][i]["phase"] != "BEFORE"):
                 ContestManager.__contests["result"].pop(i)
     
     @staticmethod
